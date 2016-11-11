@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Piano Synthesizer</title>
+      <link rel="stylesheet" href="style.css">
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="BecKTest.css">
+  </head>
+  <body>
+	<h1>Piano Synthesizer</h1>
+		<h3>The Keyboard layout is English (QWERTY)</h3>
+	 
+	<label><input type=checkbox name=showKeyboardKeys checked /> Show keys   </label>
+	<label><input type=checkbox name=transposeUp /> Transpose 1 oct up</label>
+	
+	
+	
+	<div>
+	  <ul id="pianokeys">
+		<li id="c" class="bigkey shadow">C</li>
+		<li id="cs" class="smallkey">C#</li>
+		<li id="d" class="bigkey">D</li>
+		<li id="ds" class="smallkey">D#</li>
+		<li id="e" class="bigkey">E</li>  
+		<li id="f" class="bigkey">F</li>
+		<li id="fs" class="smallkey">F#</li>
+		<li id="g" class="bigkey">G</li>
+		<li id="gs" class="smallkey">G#</li>
+		<li id="a" class="bigkey">A</li>
+		<li id="as" class="smallkey">A#</li>
+		<li id="b" class="bigkey">B</li>
+		<li id="c1" class="bigkey shadow">C</li>
+		<li id="cs1" class="smallkey">C#</li>
+		<li id="d1" class="bigkey">D</li>
+		<li id="ds1" class="smallkey">D#</li>
+		<li id="e1" class="bigkey">E</li>  
+		<li id="f1" class="bigkey">F</li>
+		<li id="fs1" class="smallkey">F#</li>
+		<li id="g1" class="bigkey">G</li>
+		<li id="gs1" class="smallkey">G#</li>
+		<li id="a1" class="bigkey">A</li>
+		<li id="as1" class="smallkey">A#</li>
+		<li id="b1" class="bigkey">B</li> 
+		 
+	  </ul>
+  <!-- close piano -->
+  
+  <div id="second">
+    <div id="controls">
+      <button type="button" id="clear">Clear</button>
+      <button type="button" id="replay">Replay (fixed)</button>
+    </div>
+  </div>  
+
+  <div id="third"><p>Recorded Order: </p>
+    <div id="displayOrder"></div>
+      </div>
+    
+  </div>
+  <!-- close container -->
+  
+  <audio id='pc' controls>
+  <source src="./musicNotes/MF%20C201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pd' controls>
+  <source src="./musicNotes/MF%20D201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pe' controls>
+  <source src="./musicNotes/MF%20E201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pf' controls>
+  <source src="./musicNotes/MF%20F201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pg' controls>
+  <source src="./musicNotes/MF%20G201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pa' controls>
+  <source src="./musicNotes/MF%20A201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pb' controls>
+  <source src="./musicNotes/MF%20B201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pcs' controls>
+  <source src="./musicNotes/MF%20Cs201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pds' controls>
+  <source src="./musicNotes/MF%20Ds201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pfs' controls>
+  <source src="./musicNotes/MF%20Fs201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pgs' controls>
+  <source src="./musicNotes/MF%20gs201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pas' controls>
+  <source src="./musicNotes/MF%20Bb201.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+    <audio id='pc1' controls>
+  <source src="./musicNotes/MF%20C301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pd1' controls>
+  <source src="./musicNotes/MF%20D301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pe1' controls>
+  <source src="./musicNotes/MF%20E301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pf1' controls>
+  <source src="./musicNotes/MF%20F301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pg1' controls>
+  <source src="./musicNotes/MF%20G301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pa1' controls>
+  <source src="./musicNotes/MF%20A301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pb1' controls>
+  <source src="./musicNotes/MF%20B301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pcs1' controls>
+  <source src="./musicNotes/MF%20Cs301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pds1' controls>
+  <source src="./musicNotes/MF%20Ds301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pfs1' controls>
+  <source src="./musicNotes/MF%20Fs301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pgs1' controls>
+  <source src="./musicNotes/MF%20Gs301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<audio id='pas1' controls>
+  <source src="./musicNotes/MF%20Bb301.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+<script type="text/javascript" src="BeckyTest.js"></script>
+<fieldset><legend>Pass</legend>
+<label>
+  LOW
+  <input class=number type=number name=lowPass value=200 min=1 max=10000 turn=2 step=10>
+</label>
+<label>
+  HIGH
+	<input class=number type=number name=highPass value=300 min=1 max=10000 turn=2 step=10>
+</label>
+</fieldset>
+
+<fieldset><legend><label><input name=enableDelay type="checkbox" checked> Delay</label></legend>
+		<label>
+		  Time (sec)
+		  <input class=number type=number name=delayTime step=0.01 value=0.3 max=1 min=0.01> 
+		</label>
+		<label>
+		  Feedback
+		  <input class=number type=number name=delayFeedback step=0.01 value=0.5 max=1 min=0>
+		</label>
+		<label>
+		  Mix
+		  <input class=number type=number name=delayMix step=0.01 max=1 min=0 value=0.5 >
+		</label>
+</fieldset>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://rawgit.com/oampo/Audiolet/master/src/audiolet/Audiolet.js'></script>
+	<script src='https://rawgit.com/grilly86/jquery.knobby.js/master/jquery.knobby.js'></script>
+	
+
+        <script src="index2.js"></script>
+
+    
+    
+  </body>
+</html>

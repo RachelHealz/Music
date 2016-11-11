@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="application-name" content="Rainbow Piano">
+	<meta name="description" content="An online piano player">
+	<meta name="keywords" content="Online,Piano,Player,Rainbow,Arijit,Patra,HTML,CSS,JavaScript">
+	<meta name="author" content="Arijit Patra">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<link rel="shortcut icon" href="pic/rp.png">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/piano.css">
+	<title>Rainbow Piano</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+
+	<div style="display:none">
+		<div itemscope itemtype="http://schema.org/Product">
+			<a itemprop="url" href="http://piano-rainbow.appspot.com/">
+				<div itemprop="name"><strong>Rainbow Piano</strong></div>
+			</a>
+			<div itemprop="description">A colorful online piano player.</div>
+		</div>
+	</div>
+
+
+	<audio id="player1" src="sound/1.mp3"></audio>
+	<audio id="player2" src="sound/2.mp3"></audio>
+	<audio id="player3" src="sound/3.mp3"></audio>
+	<audio id="player4" src="sound/4.mp3"></audio>
+	<audio id="player5" src="sound/5.mp3"></audio>
+	<audio id="player6" src="sound/6.mp3"></audio>
+	<audio id="player7" src="sound/7.mp3"></audio>
+	<audio id="player8" src="sound/8.mp3"></audio>
+	<audio id="player9" src="sound/9.mp3"></audio>
+	<audio id="player10" src="sound/10.mp3"></audio>
+	<audio id="player11" src="sound/11.mp3"></audio>
+	<audio id="player12" src="sound/12.mp3"></audio>
+	<audio id="player13" src="sound/13.mp3"></audio>
+	<div style="text-align:center;height:55%;width:100%">
+
+		<div class="wrapper" id="one" style="background-color:#e6c804" onclick="document.getElementById('player1').currentTime = 0;document.getElementById('player1').play();">
+			<span class="alpha">Q<br><br><span style="font-family:sans-serif;font-size:12px;"><b>(C<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/yellow.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<!-- <div class="wrapper">
+			<span class="alpha">W</span>
+			<img src="pic/green.jpg" style="cursor:pointer;width:85px;height:700px" onclick="document.getElementById('player2').currentTime = 0;document.getElementById('player2').play();">
+		</div> -->
+		<div class="wrapper" id="two" style="background-color:#6de375" onclick="document.getElementById('player2').currentTime = 0;document.getElementById('player2').play();">
+			<span class="alpha">W<br><br><span style="font-family:sans-serif;font-size:12px"><b>(C#<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/green.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="three" style="background-color:#075a4a" onclick="document.getElementById('player3').currentTime = 0;document.getElementById('player3').play();">
+			<span class="alpha">E<br><br><span style="font-family:sans-serif;font-size:12px"><b>(D<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/dblue.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="four" style="background-color:#f19393"onclick="document.getElementById('player4').currentTime = 0;document.getElementById('player4').play();">
+			<span class="alpha">R<br><br><span style="font-family:sans-serif;font-size:12px"><b>(D#<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/pink.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="five" style="background-color:#65decf"onclick="document.getElementById('player5').currentTime = 0;document.getElementById('player5').play();">
+			<span class="alpha">T<br><br><span style="font-family:sans-serif;font-size:12px"><b>(E<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/aqua.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="six" style="background-color:#025408" onclick="document.getElementById('player6').currentTime = 0;document.getElementById('player6').play();">
+			<span class="alpha">Y<br><br><span style="font-family:sans-serif;font-size:12px"><b>(F<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/dgreen.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="seven" style="background-color:#b2f60d" onclick="document.getElementById('player7').currentTime = 0;document.getElementById('player7').play();"> 
+			<span class="alpha">U<br><br><span style="font-family:sans-serif;font-size:12px"><b>(F#<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/neon.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="eight" style="background-color:#73048f" onclick="document.getElementById('player8').currentTime = 0;document.getElementById('player8').play();">
+			<span class="alpha">I<br><br><span style="font-family:sans-serif;font-size:12px"><b>(G<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/purple.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="nine" style="background-color:#e75d22" onclick="document.getElementById('player9').currentTime = 0;document.getElementById('player9').play();">
+			<span class="alpha">O<br><br><span style="font-family:sans-serif;font-size:12px"><b>(G#<sub>5</sub>)</b></span></span>
+			<!-- 	<img src="pic/red.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="ten" style="background-color:#6671dd" onclick="document.getElementById('player10').currentTime = 0;document.getElementById('player10').play();">
+			<span class="alpha">P<br><br><span style="font-family:sans-serif;font-size:12px"><b>(A<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/blue.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="eleven" style="background-color:#f07609" onclick="document.getElementById('player11').currentTime = 0;document.getElementById('player11').play();">
+			<span class="alpha">[<br><br><span style="font-family:sans-serif;font-size:12px"><b>(A#<sub>5</sub>)</b></span></span>
+			<!-- <img src="pic/orange.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="twelve" style="background-color:#e1c87c" onclick="document.getElementById('player12').currentTime = 0;document.getElementById('player12').play();">
+			<span class="alpha">]<br><br><span style="font-family:sans-serif;font-size:12px"><b>(B<sub>5</sub></b>)</span></span>
+			<!-- <img src="pic/cream.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+		<div class="wrapper" id="thirteen" style="background-color:#000000" onclick="document.getElementById('player13').currentTime = 0;document.getElementById('player13').play();">
+			<span class="alpha">\<br><br><span style="font-family:sans-serif;font-size:12px"><b>(C<sub>6</sub></b>)</span></span>
+			<!-- <img src="pic/black.jpg" style="cursor:pointer;width:85px;height:700px"> -->
+		</div>
+<!-- <button onclick="document.getElementById('player').play()">Play</button> 
+	<button onclick="document.getElementById('player').pause()">Pause</button>  -->
+	<!-- <img src="white.jpg" onclick="document.getElementById('player').pause();document.getElementById('player').currentTime = 0;"> -->
+<!-- <button onclick="document.getElementById('player').volume += 0.1">Vol+ </button> 
+	<button onclick="document.getElementById('player').volume -= 0.1">Vol- </button>  -->
+</div>
+<!-- <br>
+<div id="panel">
+	<div sty>
+		<span style="float:left">
+		<img src="pic/volup.jpg" style="height:75px;cursor:pointer" onclick="document.getElementById('player').volume += 0.1">&nbsp<img src="pic/voldn.png" style="height:75px;cursor:pointer" onclick="document.getElementById('player').volume += 0.1">
+		</span>
+		<span style="float:right">
+		<img src="pic/rec.png" style="height:75px;cursor:pointer">&nbsp
+		<img src="pic/pause.png" style="height:75px;cursor:pointer">&nbsp
+		<img src="pic/stop.png" style="height:75px;cursor:pointer">&nbsp
+		<img src="pic/play.png" style="height:75px;cursor:pointer">
+		</span>
+	</div>
+</div> -->
+<br><br><br><br>
+<div id="tutorial">
+	Don't know how to play a piano? We have some tutorials for you! <br><br><br>
+	<form>
+		Select what you wish to play : &nbsp
+		<select id="mySelect" style="font-family: 'Open Sans',segoe ui light;">
+			<option value="<b>Sa Re Ga Ma :</b>&nbsp Q-E-T-Y-I-P-]-\<br>">Sa Re Ga Ma</option>
+			<option value="<b>Happy Birthday :</b>&nbsp T-T-U-T-P-O&nbsp&nbsp&nbspT-T-U-T-]-P&nbsp&nbsp&nbspT-T-W-P-O-O-U&nbsp&nbsp&nbspE-E-W-P-]-P<br>">Happy Birthday</option>
+			<option value="<b>Papa Kehte Hain :</b>&nbsp T-T-E-Q-E-I-P-\-Y-T-E&nbsp&nbsp&nbspT-T-E-Q-E-I-P-\-Y-T-E&nbsp&nbsp&nbspI-P-]-\-\-\-\-]-P-P&nbsp&nbsp&nbspP-P-I-Y-Y-T-Y-I<br>">Papa Kehte Hain</option>
+			<option value="<b>Tum Hi Ho :</b>&nbsp T-I-]-\-I-P-U&nbsp&nbsp&nbspT-I-]-\-I-P-U&nbsp&nbsp&nbspT-I-]-\-I-P-U&nbsp&nbsp&nbspY-O-\-O-[&nbsp&nbsp&nbspY-O-\-O-[&nbsp&nbsp&nbspY-[-O-I-Y-I-R-Y&nbsp&nbsp&nbsp\-O-[-Y-O-\-O-[&nbsp&nbsp&nbspI-Y-I-[-O-I-Y-I-R-Y<br>">Tum Hi Ho</option>
+			<option value="<b>Kuch Kuch Hota Hain :</b>&nbsp T-Y-T-E-Q-T&nbsp&nbsp&nbspT-Y-T-E-Q-T&nbsp&nbsp&nbspE-T-E-Q-]-E-I&nbsp&nbsp&nbspQ-E-T-E-Q-Q-Q&nbsp&nbsp&nbspQ-E-T-Y-P-I&nbsp&nbsp&nbspQ-E-T-P-P-I&nbsp&nbsp&nbspE-T-E-Q-]-E-I&nbsp&nbsp&nbspQ-E-T-E-Q-Q-Q<br>">Kuch Kuch Hota Hain</option>
+			<option value="<b> Titanic Theme :</b>&nbsp Y-Y-Y-Y-T-Y&nbsp&nbsp&nbspY-T-Y-I-P-I&nbsp&nbsp&nbspY-Y-Y-Y-T-Y&nbsp&nbsp&nbspY-Q&nbsp&nbsp&nbspY-Y-Y-Y-T-Y&nbsp&nbsp&nbspY-T-Y-I-P-I&nbsp&nbsp&nbspY-Y-Y-Y-T-Y&nbsp&nbsp&nbspY-Q&nbsp&nbsp&nbspY-I-\-Q-[-P-I&nbsp&nbsp&nbspP-[-P-I-Y-T-Y&nbsp&nbsp&nbspY-T-Y-I-P-I-Y<br>">Titanic Theme</option>
+			<option value="<b> Jingle Bells :</b>&nbsp E-]-P-I-E&nbsp&nbsp&nbspE-E-E-]-P-I-T&nbsp&nbsp&nbspT-\-]-P-U&nbsp&nbsp&nbspE-E-\-P-]&nbsp&nbsp&nbspE-]-P-I-E&nbsp&nbsp&nbspE-]-P-I-T&nbsp&nbsp&nbspT-T-\-]-P-E-E-E&nbsp&nbsp&nbspE-\-E-]-P-I&nbsp&nbsp&nbspT-T-T-T-T-T-T-I-Q-E-T&nbsp&nbsp&nbspY-Y-Y-T-T-T-T-E-E-T-E-I&nbsp&nbsp&nbspT-T-T-T-T-T-T-I-Q-E-T&nbsp&nbsp&nbspY-Y-Y-T-T-T-I-I-Y-E-Q<br>">Jingle Bells</option>
+		</select> &nbsp
+		<button type="button" style="font-family: 'Open Sans',segoe ui light;" onclick="myFunction()">Show Tutorial</button>
+	</form>
+	<br>
+	<p id="music" style="font-family: 'Open Sans',segoe ui light;"></p>
+</div>
+<br><br><br><br>
+<!-- <hr> -->
+<div id="footer">
+	<div style="position:relative;bottom:1.5%;">
+		/* more features coming soon */ | <a href="http://bit.ly/1IgMwaT" target="_blank" style="text-decoration:none;color:#075a4a">Feedback</a>
+		<hr>
+		Developed by: <b>Arijit Patra</b><span style="pointer:cursor;position: relative;top: 7px;">&nbsp<a href="https://in.linkedin.com/in/arijitpatra" target="_blank"><img src="social/in.png" width="25px"></a>&nbsp<a href="https://github.com/arijitpatra/" target="_blank"><img src="social/git.png" width="25px"></a>&nbsp<a href="http://www.quora.com/Arijit-Patra-1" target="_blank"><img src="social/quora.png" width="25px"></a>&nbsp<a href="https://facebook.com/patra.arijit" target="_blank"><img src="social/fb.png" width="25px"></a>&nbsp<a href="https://google.com/+ArijitPatra94" target="_blank"><img src="social/plus.png" width="25px"></a></span> / Music tutorial by: <b>Mridul Raj Sharma</b><span style="pointer:cursor;position: relative;top: 7px;">&nbsp<a href="https://facebook.com/MridulRaj.Sharma" target="_blank"><img src="social/fb.png" width="25px"></a></span>
+		<br>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(document).keypress(function(e){
+			var code = e.keyCode || e.which;
+			if(code>93)
+			{
+				code-=32;
+			}
+        // alert(code);
+        switch(code)
+        {
+        	case 81: document.getElementById('player1').currentTime = 0;document.getElementById('player1').play();
+        	$('#one').addClass('eventone');setTimeout(function() {$('#one').removeClass('eventone');}, 100);
+        	break;
+        	case 87: document.getElementById('player2').currentTime = 0;document.getElementById('player2').play();
+        	$('#two').addClass('eventtwo');setTimeout(function() {$('#two').removeClass('eventtwo');}, 100);
+        	break;
+        	case 69: document.getElementById('player3').currentTime = 0;document.getElementById('player3').play();
+        	$('#three').addClass('eventthree');setTimeout(function() {$('#three').removeClass('eventthree');}, 100);
+        	break;
+        	case 82: document.getElementById('player4').currentTime = 0;document.getElementById('player4').play();
+        	$('#four').addClass('eventfour');setTimeout(function() {$('#four').removeClass('eventfour');}, 100);
+        	break;
+        	case 84: document.getElementById('player5').currentTime = 0;document.getElementById('player5').play();
+        	$('#five').addClass('eventfive');setTimeout(function() {$('#five').removeClass('eventfive');}, 100);
+        	break;
+        	case 89: document.getElementById('player6').currentTime = 0;document.getElementById('player6').play();
+        	$('#six').addClass('eventsix');setTimeout(function() {$('#six').removeClass('eventsix');}, 100);
+        	break;
+        	case 85: document.getElementById('player7').currentTime = 0;document.getElementById('player7').play();
+        	$('#seven').addClass('eventseven');setTimeout(function() {$('#seven').removeClass('eventseven');}, 100);
+        	break;
+        	case 73: document.getElementById('player8').currentTime = 0;document.getElementById('player8').play();
+        	$('#eight').addClass('eventeight');setTimeout(function() {$('#eight').removeClass('eventeight');}, 100);
+        	break;
+        	case 79: document.getElementById('player9').currentTime = 0;document.getElementById('player9').play();
+        	$('#nine').addClass('eventnine');setTimeout(function() {$('#nine').removeClass('eventnine');}, 100);
+        	break;
+        	case 80: document.getElementById('player10').currentTime = 0;document.getElementById('player10').play();
+        	$('#ten').addClass('eventten');setTimeout(function() {$('#ten').removeClass('eventten');}, 100);
+        	break;
+        	case 91: document.getElementById('player11').currentTime = 0;document.getElementById('player11').play();
+        	$('#eleven').addClass('eventeleven');setTimeout(function() {$('#eleven').removeClass('eventeleven');}, 100);
+        	break;
+        	case 93: document.getElementById('player12').currentTime = 0;document.getElementById('player12').play();
+        	$('#twelve').addClass('eventtwelve');setTimeout(function() {$('#twelve').removeClass('eventtwelve');}, 100);
+        	break;
+        	case 92: document.getElementById('player13').currentTime = 0;document.getElementById('player13').play();
+        	$('#thirteen').addClass('eventthirteen');setTimeout(function() {$('#thirteen').removeClass('eventthirteen');}, 100);
+        	break;
+        }
+    });
+});
+</script>
+
+<script>
+	function myFunction() {
+		var x = document.getElementById("mySelect").value;
+		document.getElementById("music").innerHTML = x;
+	}
+</script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-59413815-2', 'auto');
+	ga('send', 'pageview');
+</script>
+</body>
+</html>

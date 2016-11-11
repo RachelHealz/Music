@@ -1,0 +1,139 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+	line-height: 1;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+
+#container {
+  width:750px;
+  margin: 20px auto;
+  position:relative;
+}
+
+ul {
+  margin-top:25px;
+}
+
+li {
+  display:inline-block;
+  list-style-type: none;
+  text-align:center;
+  border:1px solid black;
+}
+
+.bigkey   {
+  width:50px;
+  padding-top:200px;
+  border-radius: 3px 3px 4px 4px;
+  box-shadow:  -2px 2px 0px 0px lightgray;
+}
+
+.smallkey  {
+  width:30px;
+  margin-bottom:90px;
+  background-color:black;
+  color:#ffffff;
+  padding-top:100px;
+  position: absolute;
+  border-radius: 3px 3px 4px 4px;
+  box-shadow:  -2px 2px 0px 0px grey;
+}
+
+#cs {
+  left: 38px;
+}
+
+#ds {
+  left: 95px;
+}
+
+#fs {
+  left: 205px;
+}
+
+#gs {
+  left: 263px;
+}
+
+#as {
+  left: 320px;
+}
+#cs1 {
+  left: 420px;
+}
+
+#ds1 {
+  left: 490px;
+}
+
+#fs1 {
+  left: 600px;
+}
+
+#gs1 {
+  left: 650px;
+}
+
+#as1 {
+  left: 700px;
+}
+
+.highlight {
+  //background-color:yellow;
+  background-color:#F6F7ED;
+  color:black;
+}
+
+#second, #third {
+  margin-top:50px;
+}
+
+#displayOrder { 
+  font-style:italic;
+}
